@@ -1,0 +1,64 @@
+{
+  "_from": "cordova-gmv-barcode-scanner",
+  "_id": "cordova-gmv-barcode-scanner@1.2.2",
+  "_inBundle": false,
+  "_integrity": "sha1-ZxS1lPBbMnzsBUfR2ntP5+0qwl0=",
+  "_location": "/cordova-gmv-barcode-scanner",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-gmv-barcode-scanner",
+    "name": "cordova-gmv-barcode-scanner",
+    "escapedName": "cordova-gmv-barcode-scanner",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-gmv-barcode-scanner/-/cordova-gmv-barcode-scanner-1.2.2.tgz",
+  "_shasum": "6714b594f05b327cec0547d1da7b4fe7ed2ac25d",
+  "_spec": "cordova-gmv-barcode-scanner",
+  "_where": "/Users/tom/Documents/University/Third Year Project/App/First App/Base Mobile App",
+  "author": {
+    "name": "Forrest Middleton"
+  },
+  "bugs": {
+    "url": "https://github.com/dealrinc/cordova-gmv-barcode-scanner/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-gmv-barcode-scanner",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Google Mobile Vision Barcode Scanner Plugin",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/dealrinc/cordova-gmv-barcode-scanner#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "cordova-gmv-barcode-scanner",
+  "repository": {
+    "type": "git",
+    "url": "git+https://forrestmid@github.com/dealrinc/cordova-gmv-barcode-scanner.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.2.2"
+}

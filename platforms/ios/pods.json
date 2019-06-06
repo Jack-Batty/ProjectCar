@@ -1,0 +1,12 @@
+{
+    "declarations": {},
+    "sources": {},
+    "libraries": {
+        "GoogleMobileVision/BarcodeDetector": {
+            "name": "GoogleMobileVision/BarcodeDetector",
+            "type": "podspec",
+            "spec": "~> 1.1",
+            "count": 1
+        }
+    }
+}

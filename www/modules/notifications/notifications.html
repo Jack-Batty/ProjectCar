@@ -1,0 +1,54 @@
+<style>
+	.notification-container {
+		background-color: #fff;
+		width: 100%;
+	}
+
+	.notification-title {
+		margin: 0;
+		margin-left: 7px;
+		padding-top: 7px;
+		padding-left: 4px;
+		padding-right: 4px;
+		font-weight: 600;
+	}
+
+	.notification-message {
+		margin-left: 7px;
+		padding: 4px;
+		color: #000;
+		margin-bottom: 4px;
+	}
+
+	.notification-timestamp {
+		font-size: 12px;
+		color: #444444;
+		margin-bottom: 4px;
+		margin-left: 7px;
+		padding-left: 4px;
+	}
+
+	.hr {
+		border: none !important;
+    	height: 1px;
+    	background: #e1e1e1;
+	}
+</style>
+
+<ion-modal-view class="full-page-bckg2" ng-init="notificationsLoad()">
+	<ion-header-bar class="bar-whitelabel">
+		<h1 class="title" style="color: #fff;">Notifications</h1>
+		<button class="button button-login" style="color: #fff !important; font-size: 2em; border: 0px solid rgba(0, 0, 0, 1);" ng-click="notifCloseModal()"><i class="ion-icon ion-ios-close-outline"></i></button>
+	</ion-header-bar>
+
+	<ion-content class="padding">
+		<div class="notification-container" ng-repeat="notification in notifications" ng-click="expandElement(notification)">
+			<h4 class="notification-title">{{notification.title}}</h4>
+
+			<p class="notification-message">{{notification.message | cut:true:notification.charLimit}}</p>
+			<p class="notification-timestamp">{{ notification.notif_time }}</p>
+
+			<hr class="hr" />
+		</div>
+	</ion-content>
+</ion-modal-view>

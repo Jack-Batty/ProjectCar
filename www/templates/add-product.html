@@ -1,0 +1,47 @@
+<ion-view view-title="Add Product" class="full-page-bckg2">
+	<ion-content class="has-header" overflow-scroll="true" style="padding: 10px;">
+		<form class="invision-form" style="height: 100vh;">
+			<div class="list list-inset">
+				<div class="item logo-big2">
+					<!-- <img src="img/logo.png" alt="logo" /> -->
+				</div>
+
+				<!-- <h3 style="color: #333; margin-left: 10px;"><strong>Add Product</strong></h3> -->
+
+				<label class="item item-input">
+					<input type="text" placeholder="Product Name" ng-model="product.name">
+				</label>
+
+                <label class="item item-input">
+					<input type="text" placeholder="Serial Number" ng-model="product.serialnumber">
+				</label>
+
+                <label class="item item-input">
+					<input type="text" placeholder="Brand" ng-model="product.brand">
+				</label>
+
+                <label class="item item-input">
+					<input type="text" placeholder="Price" ng-model="product.price">
+				</label>
+
+                <label class="item item-input">
+					<input type="text" placeholder="Quantity" ng-model="product.quantity">
+				</label>
+
+                <label class="item item-input">
+					<input type="text" placeholder="Size (ml)" ng-model="product.size">
+				</label>
+
+                <label class="item item-input">
+					<input type="text" placeholder="Alcohol Strength (%)" ng-model="product.strength">
+				</label>
+
+				<button class="button button-block button-login" ng-click="BarcodeScan()"><b>Scan Barcode</b></button>
+				<button class="button button-block button-login" ng-click="BarcodeScan()"><b>Auto Scan (Beta)</b></button>
+				<button class="button button-block button-login" ng-click="submitProduct()"><b>Add Product</b></button>
+                <!-- <button class="button button-block button-login" ng-click="categoriesPage()"><b>Back</b></button> -->
+
+			</div>
+		</form>
+	</ion-content>
+</ion-view>

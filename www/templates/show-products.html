@@ -1,0 +1,86 @@
+<style>
+	.navigation-tile {
+		padding: 1em;
+		background: {{memberDetails.company_details.primary_colour}};
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: 600;
+		margin: .2em;
+		height: 20vh;
+		border-radius: 3px;
+	}
+
+	.navigation-tile .icon {
+		color: #fff;
+		font-size: 3.5em;
+	}
+
+	.navigation-tile > p {
+		color: #fff;
+	}
+
+	.verb {
+		font-weight: 400;
+	}
+
+		.product-container {
+			background-color: #fff;
+			width: 100%;
+		}
+
+		.product-title {
+			margin: 0;
+			margin-left: 7px;
+			padding-top: 7px;
+			padding-left: 4px;
+			padding-right: 4px;
+			font-weight: 400;
+		}
+
+		.product-message {
+			margin-left: 7px;
+			padding: 4px;
+			color: #000;
+			margin-bottom: 4px;
+		}
+
+		.product-timestamp {
+			font-size: 12px;
+			color: #444444;
+			margin-bottom: 4px;
+			margin-left: 7px;
+			padding-left: 4px;
+		}
+
+		.hr {
+			border: none !important;
+	    	height: 1px;
+	    	background: #e1e1e1;
+		}
+</style>
+
+<ion-view view-title="Products" style="height: 100vh;" class="full-page-bckg2" ng-init="getProducts()">
+	<ion-content class="has-header" style="padding-left: 20px; padding-right: 20px;" overflow-scroll="true">
+
+		<div class="list list-inset">
+		 <label class="item item-input" style="border: 1PX grey solid;">
+		   <i class="icon ion-search placeholder-icon" style="color: grey;"></i>
+		   <input type="text" placeholder="Search" ng-model="SearchText">
+		 </label>
+		 <button class="button button-block button-login" ng-click="BarcodeScan()"><b>Scan Barcode</b></button>
+		 <button class="button button-block button-login" ng-click="BarcodeScan()"><b>Auto Scan (Beta)</b></button>
+		 <!-- <button class="button button-block button-login" ng-click="categoriesPage()"><b>Back</b></button> -->
+		</div>
+		<div class="card shadow card-formatting" ng-repeat="product in products | filter: SearchText">
+			<div class="item item-text-wrap">
+				<span class="label">Qty: {{product.quantity}}</span>
+				<h2 class="card-title"><strong>Name:</strong> {{product.name}}</h2>
+				<p><strong>Serial Number:</strong> {{product.serial_number}}</p>
+				<p><strong>Brand:</strong> {{product.brand}}</p>
+				<p><strong>Price:</strong> {{product.price}}</p>
+				<p><strong>Size:</strong> {{product.size}}</p>
+				<p><strong>Strength:</strong> {{product.strength}}</p>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
