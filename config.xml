@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="uk.co.tjcoding.thebeerapp" version="1.0" xmlns="http://www.tjcoding.co.uk" xmlns:cdv="http://www.tjcoding.co.uk">
-    <name>The Beer App Base</name>
+<widget id="uk.co.tjcoding.projectcar" version="1.0" xmlns="http://www.tjcoding.co.uk" xmlns:cdv="http://www.tjcoding.co.uk">
+    <name>Project Car</name>
     <description>
-        The Beer App is an all in one Beer Stock Management System
+        Project car app to manage project car builds
     </description>
-    <author email="tom@tjcoding.co.uk" href="http://tjcoding.co.uk">
-        Tom Allen
+    <author email="jack@battyonline.co.uk" href="http://tjcoding.co.uk">
+        Jack Batty
     </author>
     <content src="index.html" />
     <access origin="*" />

@@ -38,21 +38,11 @@ angular
 
 			$scope.getProducts = function()
             {
-
 	    		var data = {
                     token: 'eAthaV6PzwOardacwr6ScIEHcdbCqkpB'
                 };
-                // alert("Function Executed");
-                $http.post("https://www.tjcoding.co.uk/api/apptest/get_product", data, configProvider.httpConfig).then(function(response) {
-			        //if (response.data.success == true) {
-                        //alert(JSON.stringify(response.data));
+                $http.post("https://www.tjcoding.co.uk/api2/projectcar/get_product", data, configProvider.httpConfig).then(function(response) {
                         $scope.products = response.data;
-                        // alert(JSON.stringify($scope.products[0]));
-                    //}
-                    //else {
-                    //    alert();
-                    //}
-					// alert("6969");
                 });
             }
 

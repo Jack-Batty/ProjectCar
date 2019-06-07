@@ -76,7 +76,7 @@ angular
                     token: 'eAthaV6PzwOardacwr6ScIEHcdbCqkpB'
                 };
                 // alert("Function Executed");
-                $http.post("https://www.tjcoding.co.uk/api/apptest/get_product", data, configProvider.httpConfig).then(function(response) {
+                $http.post("https://www.tjcoding.co.uk/api2/projectcar/get_product", data, configProvider.httpConfig).then(function(response) {
 			        //if (response.data.success == true) {
                         //alert(JSON.stringify(response.data));
                         $scope.products = response.data;

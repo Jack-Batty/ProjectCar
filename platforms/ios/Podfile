@@ -2,7 +2,7 @@
 
 platform :ios, '9.0'
 
-target 'The Beer App Base' do
-	project 'The Beer App Base.xcodeproj'
+target 'Project Car' do
+	project 'Project Car.xcodeproj'
 	pod 'GoogleMobileVision/BarcodeDetector', '~> 1.1'
 end

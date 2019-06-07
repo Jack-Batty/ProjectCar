@@ -47,7 +47,7 @@ var module = angular.module('invisionApp');
 
 	    		var data = {token: 'eAthaV6PzwOardacwr6ScIEHcdbCqkpB'};
 
-	    		/*$http.post("https://www.tjcoding.co.uk/api/getnotifications", data, config).then(function(response) {
+	    		/*$http.post("https://www.tjcoding.co.uk/api2/getnotifications", data, config).then(function(response) {
 			        if (response.data.success == true) {
 						$scope.notifications = response.data.notifications;
 
@@ -126,7 +126,7 @@ var module = angular.module('invisionApp');
 
 	      		if($scope.new_user.password == $scope.new_user.password2){
 	      			var data  = {username: $scope.new_user.forename, surname: $scope.new_user.surname, email : $scope.new_user.email, company: $scope.new_user.company, company_location: $scope.new_user.company_location, dob: $scope.new_user.dob, password : $scope.new_user.password, token: 'eAthaV6PzwOardacwr6ScIEHcdbCqkpB'};
-					$http.post("https://www.tjcoding.co.uk/api/createuser", data, config).then(function(response){
+					$http.post("https://www.tjcoding.co.uk/api2/createuser", data, config).then(function(response){
 						if(response.data.success == true){
 							localStorage.setItem('email', response.data.email);
 							$ionicHistory.nextViewOptions({disableBack: true});

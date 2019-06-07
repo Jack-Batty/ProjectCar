@@ -15,7 +15,7 @@ angular.module('invisionApp')
 
             // var data = {email : $scope.userDetails.email, password : password, pushid: pushID, token: 'eAthaV6PzwOardacwr6ScIEHcdbCqkpB'};
             var data  = {email: username, password: password, pushid: pushID, token: 'eAthaV6PzwOardacwr6ScIEHcdbCqkpB'};
-            $http.post("https://tjcoding.co.uk/api/apptest/login2", data, config).then(function(response){
+            $http.post("https://tjcoding.co.uk/api/projectcar/login2", data, config).then(function(response){
                 /*if(response.data.success != true){
                     response.message = 'Username or password is incorrect';
                     var alertPopup = $ionicPopup.alert({

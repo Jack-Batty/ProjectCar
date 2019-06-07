@@ -6,8 +6,6 @@
 					<!-- <img src="img/logo.png" alt="logo" /> -->
 				</div>
 
-				<!-- <h3 style="color: #333; margin-left: 10px;"><strong>Add Product</strong></h3> -->
-
 				<label class="item item-input">
 					<input type="text" placeholder="Product Name" ng-model="product.name">
 				</label>
@@ -21,7 +19,7 @@
 				</label>
 
                 <label class="item item-input">
-					<input type="text" placeholder="Price" ng-model="product.price">
+					<input type="number" placeholder="Price" ng-model="product.price">
 				</label>
 
                 <label class="item item-input">
@@ -29,15 +27,14 @@
 				</label>
 
                 <label class="item item-input">
-					<input type="text" placeholder="Size (ml)" ng-model="product.size">
+					<input type="text" placeholder="Url" ng-model="product.url">
 				</label>
 
                 <label class="item item-input">
-					<input type="text" placeholder="Alcohol Strength (%)" ng-model="product.strength">
+					<input type="text" placeholder="Colour" ng-model="product.colour">
 				</label>
 
 				<button class="button button-block button-login" ng-click="BarcodeScan()"><b>Scan Barcode</b></button>
-				<button class="button button-block button-login" ng-click="BarcodeScan()"><b>Auto Scan (Beta)</b></button>
 				<button class="button button-block button-login" ng-click="submitProduct()"><b>Add Product</b></button>
                 <!-- <button class="button button-block button-login" ng-click="categoriesPage()"><b>Back</b></button> -->
 

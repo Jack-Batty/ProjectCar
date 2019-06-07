@@ -45,11 +45,12 @@ angular.module('invisionApp')
                     brand: $scope.product.brand,
                     price: $scope.product.price,
                     quantity: $scope.product.quantity,
-                    size: $scope.product.size,
-                    strength: $scope.product.strength,
+                    url: $scope.product.url,
+                    colour: $scope.product.colour,
+                    status_id: 1,
                     token: 'eAthaV6PzwOardacwr6ScIEHcdbCqkpB'
                 };
-                $http.post("https://www.tjcoding.co.uk/api/apptest/add_product", data, config).then(function(response) {
+                $http.post("https://www.tjcoding.co.uk/api2/projectcar/add_product", data, config).then(function(response) {
 			        if (response.data.success == true) {
                         var alertPopup = $ionicPopup.alert({
                            title: 'Record Added!',
